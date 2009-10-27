@@ -1,0 +1,146 @@
+body {
+    background:url("../images/bg_full_with_logo.png") top center no-repeat;
+    margin:0px;
+    padding-top:10px;
+    font: 0.85em/1em Arial, sans-serif;
+    text-align:center;
+}
+
+h3 {
+font: 1.4em;
+font-family: "Trebuchet MS", sans-serif;
+margin:20px 0 0 0;
+padding:0;
+}
+
+.list_header h3, .navigation h3 {
+margin-bottom:5px;
+}
+
+#container {
+    width: 965px;
+    margin:140px auto 0 auto;
+    text-align:left;
+    line-height:1.3em;
+}
+
+#container a {
+color:#238EC2;
+}
+
+#left {
+width:21%;
+float:left;
+margin-right:2%;
+padding-bottom:45px;
+font-size:0.9em;
+overflow:hidden;
+}
+#left .cont{
+padding:0 15px;
+}
+#left .cont h1{
+margin:0;
+padding:0;
+}
+
+#left .cont h1 span{
+display:none;
+}
+
+.listbox {
+padding:15px 15px;
+background:#F0F0F0;
+overflow:hidden;
+}
+
+
+#method {
+padding:15px 15px;
+background:#F0F0F0;
+overflow:hidden;
+display:none;
+}
+
+.listbox a {
+text-decoration:none;
+color:#333;
+display:block;
+}
+
+.listbox a:hover {
+text-decoration:underline;
+}
+
+#file_wrapper {
+display:none;
+}
+
+.togglelink {
+background:#F0F0F0;
+font-size:0.85em;
+padding:2px 7px;
+text-decoration:none;
+color:#999999;
+}
+
+#content {
+padding-bottom:45px;;
+width:76%;;
+float:left;;
+display:inline;;
+line-height:1.3em;;
+}
+#content ul {
+list-style:square;
+}
+
+#content a {
+color:#238EC2;
+}
+
+#content h3 {
+background:#E4E4E4;
+padding:25px 10px 10px 10px;
+}
+
+#content h3 a {
+color:#000;
+background:#E4E4E4;
+text-decoration:none;
+padding:0px;
+}
+
+#content h3 a span{
+color:#555;
+font-weight:normal;
+}
+
+
+#content pre {
+padding:20px;
+background: #F0F0F0;
+}
+
+.headtitle {
+margin:0px;
+padding:45px 10px 12px 10px;
+background:#238EC2;
+color:#FFFFFF;
+}
+
+.dfunction {
+margin-left:10px;
+}
+
+
+.clear {
+clear: both;
+}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* oculto IE-mac \*/
+* html .estirar {height: 1%;}
+.clearfix {display: block;}
+/*fin oculto IE-mac */

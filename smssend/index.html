@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>open.movilforum - SMS send</title>
+    <link rel="stylesheet" href="../stylesheet/index.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+     <div id="container">
+         <div id="left">
+    <div class="cont">
+        <div class="navigation top listbox"><a href="../index.html"> back to the main page</a></div>
+        
+        <div class="navigation top" id="methods"><h3>Methods</h3><div class="listbox">
+
+
+        <span class='bpink'>
+
+        <a href='#M000001'>
+        new<br/>
+        </a>
+        </span>
+
+
+        <span class='bpink'>
+
+        <a href='#M000002'>
+        send<br/>
+        </a>
+        </span>
+
+        </div></div>
+        
+    </div>
+</div>
+
+
+
+<div id="content">
+
+<h1 class="headtitle" id="item_name">Class: SMS send</h1>
+
+<p>
+The <a href="http://open.movilforum.com/wiki/index.php/Interfaz_HTTP_de_envio_de_SMS">http SMS send interface</a> is a service that allows you to send SMS simply with an http post.</p>
+
+<p>To make it as simple as possible we have the plugin <a href="http://code.google.com/p/action-sms/">Action SMS</a> that adds to ActionMailer methods to send sms. </p>
+
+<p>
+To install the gem just write in your console:
+</p>
+<pre>
+  script/plugin install http://action-sms.googlecode.com/svn/tags/action_sms
+</pre>
+<p>In your rails application you must create a config/sms.yml file like this</p>
+<pre>
+    gateway: movistar
+    login: mobile
+    password: service password
+</pre>
+
+
+<h3>Code example from ruby</h3>
+<p>
+If you need send SMS from your ruby script:
+</p>
+<pre>
+    require 'movistar_gateway'
+    gateway = MovistarGateway.new('login', 'password')
+    gateway.send(['66666666', '777777777'], 'message')
+</pre>
+<p></p>
+
+
+
+
+
+
+
+<br/><div class="a_method"><div><h3>
+<a href='#M000001' id='M000001'>
+
+
+new
+<span>
+(login, password)
+
+</span></a>
+</h3><div class="dfunction">
+<p>
+Initialize with the mobile (as login) and password service
+</p>
+
+</div></div></div>
+
+
+
+
+<br/><div class="a_method"><div><h3>
+<a href='#M000002' id='M000002'>
+
+
+send
+<span>
+    (destinations, message)
+
+</span></a>
+</h3><div class="dfunction">
+<p>
+Send the SMS to the destinatin number
+</p>
+<strong>Response codes</strong>
+
+<ul>
+    
+    <li><strong>1</strong> - Bad user.</li>
+    <li><strong>4</strong> - Service not available.</li>
+    <li><strong>5</strong> - Bad password.</li>
+    <li><strong>11</strong> - Bad destination.</li>
+    <li><strong>12</strong> - Destination is empty.</li>
+</ul>
+
+</div></div></div>
+<br/>
+</div></div></div>
+     </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <title>open.movilforum - Copiagenda</title>
+    <link rel="stylesheet" href="../stylesheet/index.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+     <div id="container">
+         <div id="left">
+    <div class="cont">
+        <div class="navigation top listbox"><a href="../index.html"> back to the main page</a></div>
+        
+        <div class="navigation top" id="methods"><h3>Methods</h3><div class="listbox">
+
+        <span class='bpink'>
+
+        <a href='#M000002'>
+        RetrieveContacts<br/>
+        </a>
+        </span>
+
+
+        <span class='bpink'>
+
+        <a href='#M000003'>
+        get_contacts<br/>
+        </a>
+        </span>
+
+
+        <span class='bpink'>
+
+        <a href='#M000004'>
+        get_data<br/>
+        </a>
+
+        </span>
+
+
+        <span class='bpink'>
+
+        <a href='#M000001'>
+        new<br/>
+        </a>
+        </span>
+
+        </div></div>
+        
+    </div>
+</div>
+
+
+
+<div id="content">
+
+<h1 class="headtitle" id="item_name">Class: Copiagenda</h1>
+
+<p>
+<a href="Copiagenda.html">Copiagenda</a> is a service that allows you to
+mantain an online copy of your mobile contacts. You can get more
+information and download the gem in <a
+href="http://open.movilforum.com/apicopiagenda">open.movilforum.com/apicopiagenda</a>
+</p>
+<p>
+To install the gem you must do.
+</p>
+<pre>
+  gem install copiagenda4omf
+</pre>
+
+<p>
+To get the latest documentation visit <a
+href="http://copiagenda4omf.rubyforge.org">copiagenda4omf.rubyforge.org</a>/
+</p>
+<h3>Code example</h3>
+<p>
+To use the gem in your project you need to require the gem in your
+controller.
+</p>
+<pre>
+  require 'copiagenda'
+</pre>
+<p>
+After that you can initialize with your mobile phone and your service
+password (<a
+href="http://open.movilforum.com/wiki/index.php/770">open.movilforum.com/wiki/index.php/770</a>)
+to retrieve your last copy.
+
+</p>
+<pre>
+  ca = Copiagenda.new('phone', 'service password')
+  ca.RetrieveContacts
+</pre>
+
+
+
+
+<p></p>
+
+
+
+
+
+
+
+<br/><div class="a_method"><div><h3>
+<a href='#M000001' id='M000001'>
+
+
+new
+<span>
+(login, password)
+
+</span></a>
+</h3><div class="dfunction">
+<p>
+Initialize <a href="Copiagenda.html">Copiagenda</a> with the mobile (as
+login) and password service
+</p>
+
+</div></div></div>
+
+
+
+
+<br/><div class="a_method"><div><h3>
+<a href='#M000002' id='M000002'>
+
+
+RetrieveContacts
+<span>
+()
+
+</span></a>
+</h3><div class="dfunction">
+<p>
+Return an Array with the contacts of the last copy of your copiagenda
+</p>
+
+</div></div></div>
+<br/><div class="a_method"><div><h3>
+<a href='#M000003' id='M000003'>
+
+
+get_contacts
+<span>
+()
+
+</span></a>
+</h3><div class="dfunction">
+<p>
+Alias for <a href="Copiagenda.html#M000002">RetrieveContacts</a>
+</p>
+
+</div></div></div>
+<br/><div class="a_method"><div><h3>
+<a href='#M000004' id='M000004'>
+
+
+get_data
+<span>
+()
+
+</span></a>
+</h3><div class="dfunction">
+
+</div>
+</div></div></div>
+     </div>
+  </body>
+</html>
